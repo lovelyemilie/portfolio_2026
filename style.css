@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color:white;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 5vh 3vw;
+  background-color: #f2f2f2;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* main page */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6vh;
+}
+
+.logo {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.nav a {
+  margin-left: 3vw;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.content h1{
+  font-size: clamp(26px, 3.8vw, 52px);
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  margin-bottom: 2vh;
+}
+
+h1 a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+h1 a:hover {
+  color: rgba(255, 64, 137, 0.41);
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+header a:hover {
+  color: rgba(255, 64, 137, 0.41);
+}
+
+/* individual project pages */
+.title{
+  font-size: clamp(26px, 3.8vw, 20px);
+  color: rgba(255, 64, 137, 0.41);
+}
+
+.content2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.container2 {
+  padding: 40px 60px;
+}
+
+.left h2 {
+  font-size: clamp(24px, 3vw, 42px);
+  margin-bottom: 5px;
+}
+
+.left h3 {
+  font-size: clamp(24px, 3vw, 42px);
+  margin-bottom: 5px;
+}
+
+.left h4 {
+  font-size: clamp(24px, 3vw, 42px);
+  margin-bottom: 5px;
+}
+
+.right {
+  width: 49%;
+  line-height: 1.6;
+  color: black;
+}
+
+.image-grid {
+  display: flex;
+  gap: 40px;
+}
+
+.img-box {
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  background: white;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.img-box2 {
+  width: 100%; 
+  aspect-ratio: 16 / 9; 
+  border-radius: 12px; 
+  overflow: hidden; 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 45px;
+  background: white;
+}
+
+.img-box2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.img-box3 {
+  width: 100%; 
+  aspect-ratio: 16 / 9; 
+  border-radius: 12px; 
+  overflow: hidden; 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 45px;
+  background: white;
+}
+
+.img-box3 img {
+  width: auto;
+  height: 100%;
+  display: block;
+}
+
+.img-box4 {
+  width: 100%; 
+  aspect-ratio: 16 / 9; 
+  border-radius: 12px; 
+  overflow: hidden; 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 45px;
+  background: black;
+}
+
+.img-box4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.img-box5 {
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  margin-bottom: 45px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  background: white;
+}
+
+.img-box5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.project {
+  text-align: center;
+  width: 49%;
+  line-height: 1.6;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.back-arrow {
+  width: 40px;
+  height: 10px;
+  margin-bottom: 40px;
+  position: relative;
+  transform: scale(1.5);
+  transform-origin: left center;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* Arrow line */
+.back-arrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  width: 49px;
+  height: 2px;
+  transform: translateY(-50%);
+  background: currentColor;
+}
+
+/* Triangle (outline style) */
+.back-arrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid currentColor;
+  border-left: 2px solid currentColor;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.back-arrow:hover {
+  color: rgba(255, 64, 137, 0.41);
+}
+
+/* about me page*/
+.hello {
+  font-size: clamp(26px, 3.8vw, 20px);
+  color: rgba(255, 64, 137, 0.41);
+  margin-bottom: 60px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* LEFT COLUMN */
+.contact {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact p {
+  font-size: clamp(24px, 3vw, 42px);
+  margin-bottom: 16px;
+}
+
+/* RIGHT COLUMN */
+.description {
+  flex: 1;
+  min-width: 280px;
+  font-size: clamp(16px, 2vw, 24px);
+  line-height: 1.6;
+  color: black;
+}
+
